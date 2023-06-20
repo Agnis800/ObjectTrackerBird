@@ -32,8 +32,8 @@ while True:
         class_name = classes[class_id]
 
         if class_name == "bird":
-            cv2.putText(frame, class_name, (x, y - 10), cv2.FONT_HERSHEY_PLAIN, 2, (200, 0, 50), 2)
-            cv2.rectangle(frame, (x, y), (x + w, y + h), (200, 0, 50), 3)
+            cv2.putText(frame, class_name, (x, y - 10), cv2.FONT_HERSHEY_PLAIN, 2, (255, 0, 0), 2)
+            cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 3)
 
     cv2.imshow("Frame", frame)
     key = cv2.waitKey(1)
